@@ -128,6 +128,12 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
+.text-space {
+  background-color:rgba(255,255,255,.9);
+  padding-bottom:1em;
+  /*text-shadow: 1px 1px 2px #555;*/
+}
+
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
@@ -173,7 +179,14 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
 }
+
+/*@media(max-width:600px) {
+  .icons {
+    display: none;
+  }
+}*/
 
 footer {
     padding: 50px 0;
@@ -185,16 +198,23 @@ p.copyright {
 }
 
 /*btn overrides */
+.btn-default {
+  margin: 0 5px;
+}
 .btn-default:hover {
     color: #ffffff;
     background-color: #2D568A;
-    // background-color: #C3411E;
+    /*background-color: #C3411E;*/
+    /*background-color: #888888;*/
 }
 
 /* random styles */
 
 .marginl {
-    margin-left: 1rem;
+    margin-left: 1em;
+}
+.marginT {
+    margin-top: 1em;
 }
 
 .video-container {
@@ -211,4 +231,30 @@ p.copyright {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.wht-cvr {
+  background-color: rgba(255,255,255,.4);
+}
+.tt-bg {
+  background-image: url(../img/campaigns/tweetedTimes/tt-bg.png);
+  background-repeat: repeat-x;
+
+}
+.ss-bg {
+  background: url(../img/campaigns/sharing-seconds/food-bg.png) no-repeat center 15%;
+
+}
+.ribbon {
+  /*background: url(../img/home-bg.jpg) no-repeat ;*/
+  width: 100%;
+  background-size: 100%;
+  /*color: white;*/
+  text-shadow: 1px 1px 2px rbga(0,0,0,.5);
+  border-top: .5px solid #666666;
+  border-bottom: .5px solid #666666;
+}
+.ribbon h2 {
+  margin: .75em 0;
+  text-transform: uppercase;
 }
